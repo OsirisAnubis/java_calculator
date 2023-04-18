@@ -24,7 +24,7 @@ public class Calculator {
                 throw new IOException("Incorrect number in expression");
             }
         }
-        if ((firstNum < 1) | (firstNum > 10) | (secondNum < 1) | (secondNum > 10))
+        if ((firstNum < 1) || (firstNum > 10) || (secondNum < 1) || (secondNum > 10))
             throw new IOException("Number is out of range");
         String operator = parts[1];
         int resultNum = Operator.use(operator, firstNum, secondNum);
@@ -34,6 +34,7 @@ public class Calculator {
     }
 }
 class RomanNumber {
+    HashMap<Inge
     public static int value(char r) {
         if (r == 'I') return 1;
         if (r == 'V') return 5;
