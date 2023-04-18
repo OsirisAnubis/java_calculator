@@ -34,7 +34,6 @@ public class Calculator {
     }
 }
 class RomanNumber {
-    HashMap<Inge
     public static int value(char r) {
         if (r == 'I') return 1;
         if (r == 'V') return 5;
